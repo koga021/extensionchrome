@@ -1,12 +1,18 @@
 {
-    "name": "Ribas Fisrt Chorme App",
-    "description": "My first Chrome App, created for tests",
-    "version": "0.1",
+    "name": "Ribas App Chrome",
     "manifest_version": 2,
-    "app": {
-      "background": {
-        "scripts": ["background.js"]
-      }
+    "version": "1.0",
+    "description": "Faça busca no twitter com essa extensão.",
+    "browser_action": {
+      "default_icon": "calculator-128.png",
+      "popup": "background.html"
     },
-    "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
-  }
+    "icons": {
+      "19" : "calculator-16.png",
+      "48" : "calculator-128.png",
+      "128" : "calculator-128.png"
+    },
+    "permissions": [
+        "http://search.twitter.com/"
+      ]
+    } 
